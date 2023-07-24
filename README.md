@@ -1,5 +1,4 @@
 # death-sniper-fast-commands
-You know the drill.
-Put your command prefix in prefix.txt.
-
-Run command.py, it will now automatically change catalog links you copy into deathsniper commands
+Drag command.py and prefix.txt to your sniper folder.
+After opening command.py, it will scan your clipboard for roblox catalog links.
+after it detects, it will copy to your clipboard a command you can paste into any discord channel to change your deathsniper id.
