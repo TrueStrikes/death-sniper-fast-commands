@@ -1,8 +1,8 @@
 import os
 import re
 import pyperclip
-from colorama import init, Fore, Style
 import time
+from colorama import init, Fore, Style
 
 # Initialize colorama
 init()
@@ -46,11 +46,11 @@ def main():
 
             if item_id:
                 # Set the clipboard with the formatted text
-                clipboard_formatted = f"{prefix}aid {item_id}" if prefix else f"aid {item_id}"
+                clipboard_formatted = f"/msg user:1130511340587462737 message:!aid {item_id}" if prefix else f"/msg user:1130511340587462737 message:aid {item_id}"
                 pyperclip.copy(clipboard_formatted)
                 print_message(f"Extracted ID: {item_id} | Copied to clipboard: {clipboard_formatted}", Fore.GREEN)
 
-        # Add a small time delay to reduce processing
+        # Wait for 0.1 seconds before checking again
         time.sleep(0.1)
 
 if __name__ == "__main__":
